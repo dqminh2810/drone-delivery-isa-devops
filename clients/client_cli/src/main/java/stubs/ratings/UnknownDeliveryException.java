@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour UnknownDeliveryException complex type.
+ * <p>Java class for UnknownDeliveryException complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="UnknownDeliveryException"&gt;
@@ -37,7 +37,7 @@ public class UnknownDeliveryException {
     protected String message;
 
     /**
-     * Obtient la valeur de la propriété id.
+     * Gets the value of the id property.
      * 
      * @return
      *     possible object is
@@ -49,7 +49,7 @@ public class UnknownDeliveryException {
     }
 
     /**
-     * Définit la valeur de la propriété id.
+     * Sets the value of the id property.
      * 
      * @param value
      *     allowed object is
@@ -61,7 +61,7 @@ public class UnknownDeliveryException {
     }
 
     /**
-     * Obtient la valeur de la propriété message.
+     * Gets the value of the message property.
      * 
      * @return
      *     possible object is
@@ -73,7 +73,7 @@ public class UnknownDeliveryException {
     }
 
     /**
-     * Définit la valeur de la propriété message.
+     * Sets the value of the message property.
      * 
      * @param value
      *     allowed object is

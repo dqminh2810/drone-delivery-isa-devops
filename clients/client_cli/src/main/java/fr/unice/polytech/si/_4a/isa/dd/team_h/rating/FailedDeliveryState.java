@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour failedDeliveryState complex type.
+ * <p>Java class for failedDeliveryState complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="failedDeliveryState"&gt;
@@ -36,7 +36,7 @@ public class FailedDeliveryState
     protected String localDateTime;
 
     /**
-     * Obtient la valeur de la propriété localDateTime.
+     * Gets the value of the localDateTime property.
      * 
      * @return
      *     possible object is
@@ -48,7 +48,7 @@ public class FailedDeliveryState
     }
 
     /**
-     * Définit la valeur de la propriété localDateTime.
+     * Sets the value of the localDateTime property.
      * 
      * @param value
      *     allowed object is

@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour comment complex type.
+ * <p>Java class for comment complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="comment"&gt;
@@ -43,7 +43,7 @@ public class Comment {
     protected int rating;
 
     /**
-     * Obtient la valeur de la propriété content.
+     * Gets the value of the content property.
      * 
      * @return
      *     possible object is
@@ -55,7 +55,7 @@ public class Comment {
     }
 
     /**
-     * Définit la valeur de la propriété content.
+     * Sets the value of the content property.
      * 
      * @param value
      *     allowed object is
@@ -67,7 +67,7 @@ public class Comment {
     }
 
     /**
-     * Obtient la valeur de la propriété delivery.
+     * Gets the value of the delivery property.
      * 
      * @return
      *     possible object is
@@ -79,7 +79,7 @@ public class Comment {
     }
 
     /**
-     * Définit la valeur de la propriété delivery.
+     * Sets the value of the delivery property.
      * 
      * @param value
      *     allowed object is
@@ -91,7 +91,7 @@ public class Comment {
     }
 
     /**
-     * Obtient la valeur de la propriété id.
+     * Gets the value of the id property.
      * 
      */
     public int getId() {
@@ -99,7 +99,7 @@ public class Comment {
     }
 
     /**
-     * Définit la valeur de la propriété id.
+     * Sets the value of the id property.
      * 
      */
     public void setId(int value) {
@@ -107,7 +107,7 @@ public class Comment {
     }
 
     /**
-     * Obtient la valeur de la propriété rating.
+     * Gets the value of the rating property.
      * 
      */
     public int getRating() {
@@ -115,7 +115,7 @@ public class Comment {
     }
 
     /**
-     * Définit la valeur de la propriété rating.
+     * Sets the value of the rating property.
      * 
      */
     public void setRating(int value) {

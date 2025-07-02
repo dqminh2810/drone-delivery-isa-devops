@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour deleteComment complex type.
+ * <p>Java class for deleteComment complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="deleteComment"&gt;
@@ -34,7 +34,7 @@ public class DeleteComment {
     protected String packageTrackingNumber;
 
     /**
-     * Obtient la valeur de la propriété packageTrackingNumber.
+     * Gets the value of the packageTrackingNumber property.
      * 
      * @return
      *     possible object is
@@ -46,7 +46,7 @@ public class DeleteComment {
     }
 
     /**
-     * Définit la valeur de la propriété packageTrackingNumber.
+     * Sets the value of the packageTrackingNumber property.
      * 
      * @param value
      *     allowed object is

@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour deleteCommentResponse complex type.
+ * <p>Java class for deleteCommentResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="deleteCommentResponse"&gt;
@@ -36,7 +36,7 @@ public class DeleteCommentResponse {
     protected boolean _return;
 
     /**
-     * Obtient la valeur de la propriété return.
+     * Gets the value of the return property.
      * 
      */
     public boolean isReturn() {
@@ -44,7 +44,7 @@ public class DeleteCommentResponse {
     }
 
     /**
-     * Définit la valeur de la propriété return.
+     * Sets the value of the return property.
      * 
      */
     public void setReturn(boolean value) {

@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour deliveryState complex type.
+ * <p>Java class for deliveryState complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="deliveryState"&gt;
@@ -41,7 +41,7 @@ public abstract class DeliveryState {
     protected String name;
 
     /**
-     * Obtient la valeur de la propriété name.
+     * Gets the value of the name property.
      * 
      * @return
      *     possible object is
@@ -53,7 +53,7 @@ public abstract class DeliveryState {
     }
 
     /**
-     * Définit la valeur de la propriété name.
+     * Sets the value of the name property.
      * 
      * @param value
      *     allowed object is

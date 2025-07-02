@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour findCommentForSupplier complex type.
+ * <p>Java class for findCommentForSupplier complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="findCommentForSupplier"&gt;
@@ -34,7 +34,7 @@ public class FindCommentForSupplier {
     protected String supplierName;
 
     /**
-     * Obtient la valeur de la propriété supplierName.
+     * Gets the value of the supplierName property.
      * 
      * @return
      *     possible object is
@@ -46,7 +46,7 @@ public class FindCommentForSupplier {
     }
 
     /**
-     * Définit la valeur de la propriété supplierName.
+     * Sets the value of the supplierName property.
      * 
      * @param value
      *     allowed object is

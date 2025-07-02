@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour createComment complex type.
+ * <p>Java class for createComment complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="createComment"&gt;
@@ -40,7 +40,7 @@ public class CreateComment {
     protected String content;
 
     /**
-     * Obtient la valeur de la propriété packageTrackingNumber.
+     * Gets the value of the packageTrackingNumber property.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class CreateComment {
     }
 
     /**
-     * Définit la valeur de la propriété packageTrackingNumber.
+     * Sets the value of the packageTrackingNumber property.
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class CreateComment {
     }
 
     /**
-     * Obtient la valeur de la propriété rating.
+     * Gets the value of the rating property.
      * 
      */
     public int getRating() {
@@ -72,7 +72,7 @@ public class CreateComment {
     }
 
     /**
-     * Définit la valeur de la propriété rating.
+     * Sets the value of the rating property.
      * 
      */
     public void setRating(int value) {
@@ -80,7 +80,7 @@ public class CreateComment {
     }
 
     /**
-     * Obtient la valeur de la propriété content.
+     * Gets the value of the content property.
      * 
      * @return
      *     possible object is
@@ -92,7 +92,7 @@ public class CreateComment {
     }
 
     /**
-     * Définit la valeur de la propriété content.
+     * Sets the value of the content property.
      * 
      * @param value
      *     allowed object is

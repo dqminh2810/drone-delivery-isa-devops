@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour inFlightDeliveryState complex type.
+ * <p>Java class for inFlightDeliveryState complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="inFlightDeliveryState"&gt;
@@ -36,7 +36,7 @@ public class InFlightDeliveryState
     protected String shippedAt;
 
     /**
-     * Obtient la valeur de la propriété shippedAt.
+     * Gets the value of the shippedAt property.
      * 
      * @return
      *     possible object is
@@ -48,7 +48,7 @@ public class InFlightDeliveryState
     }
 
     /**
-     * Définit la valeur de la propriété shippedAt.
+     * Sets the value of the shippedAt property.
      * 
      * @param value
      *     allowed object is

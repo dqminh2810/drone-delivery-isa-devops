@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour package complex type.
+ * <p>Java class for package complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="package"&gt;
@@ -43,7 +43,7 @@ public class Package {
     protected float weight;
 
     /**
-     * Obtient la valeur de la propriété destination.
+     * Gets the value of the destination property.
      * 
      * @return
      *     possible object is
@@ -55,7 +55,7 @@ public class Package {
     }
 
     /**
-     * Définit la valeur de la propriété destination.
+     * Sets the value of the destination property.
      * 
      * @param value
      *     allowed object is
@@ -67,7 +67,7 @@ public class Package {
     }
 
     /**
-     * Obtient la valeur de la propriété supplier.
+     * Gets the value of the supplier property.
      * 
      * @return
      *     possible object is
@@ -79,7 +79,7 @@ public class Package {
     }
 
     /**
-     * Définit la valeur de la propriété supplier.
+     * Sets the value of the supplier property.
      * 
      * @param value
      *     allowed object is
@@ -91,7 +91,7 @@ public class Package {
     }
 
     /**
-     * Obtient la valeur de la propriété trackingNumber.
+     * Gets the value of the trackingNumber property.
      * 
      * @return
      *     possible object is
@@ -103,7 +103,7 @@ public class Package {
     }
 
     /**
-     * Définit la valeur de la propriété trackingNumber.
+     * Sets the value of the trackingNumber property.
      * 
      * @param value
      *     allowed object is
@@ -115,7 +115,7 @@ public class Package {
     }
 
     /**
-     * Obtient la valeur de la propriété weight.
+     * Gets the value of the weight property.
      * 
      */
     public float getWeight() {
@@ -123,7 +123,7 @@ public class Package {
     }
 
     /**
-     * Définit la valeur de la propriété weight.
+     * Sets the value of the weight property.
      * 
      */
     public void setWeight(float value) {

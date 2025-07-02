@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour findCommentForPackageResponse complex type.
+ * <p>Java class for findCommentForPackageResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="findCommentForPackageResponse"&gt;
@@ -34,7 +34,7 @@ public class FindCommentForPackageResponse {
     protected Comment comment;
 
     /**
-     * Obtient la valeur de la propriété comment.
+     * Gets the value of the comment property.
      * 
      * @return
      *     possible object is
@@ -46,7 +46,7 @@ public class FindCommentForPackageResponse {
     }
 
     /**
-     * Définit la valeur de la propriété comment.
+     * Sets the value of the comment property.
      * 
      * @param value
      *     allowed object is

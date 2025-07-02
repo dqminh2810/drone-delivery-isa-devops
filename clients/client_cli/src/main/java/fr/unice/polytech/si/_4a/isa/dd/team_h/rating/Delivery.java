@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour delivery complex type.
+ * <p>Java class for delivery complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="delivery"&gt;
@@ -52,7 +52,7 @@ public class Delivery {
     protected Package aPackage;
 
     /**
-     * Obtient la valeur de la propriété date.
+     * Gets the value of the date property.
      * 
      * @return
      *     possible object is
@@ -64,7 +64,7 @@ public class Delivery {
     }
 
     /**
-     * Définit la valeur de la propriété date.
+     * Sets the value of the date property.
      * 
      * @param value
      *     allowed object is
@@ -76,7 +76,7 @@ public class Delivery {
     }
 
     /**
-     * Obtient la valeur de la propriété distance.
+     * Gets the value of the distance property.
      * 
      */
     public float getDistance() {
@@ -84,7 +84,7 @@ public class Delivery {
     }
 
     /**
-     * Définit la valeur de la propriété distance.
+     * Sets the value of the distance property.
      * 
      */
     public void setDistance(float value) {
@@ -92,7 +92,7 @@ public class Delivery {
     }
 
     /**
-     * Obtient la valeur de la propriété flightTime.
+     * Gets the value of the flightTime property.
      * 
      */
     public float getFlightTime() {
@@ -100,7 +100,7 @@ public class Delivery {
     }
 
     /**
-     * Définit la valeur de la propriété flightTime.
+     * Sets the value of the flightTime property.
      * 
      */
     public void setFlightTime(float value) {
@@ -108,7 +108,7 @@ public class Delivery {
     }
 
     /**
-     * Obtient la valeur de la propriété id.
+     * Gets the value of the id property.
      * 
      */
     public int getId() {
@@ -116,7 +116,7 @@ public class Delivery {
     }
 
     /**
-     * Définit la valeur de la propriété id.
+     * Sets the value of the id property.
      * 
      */
     public void setId(int value) {
@@ -124,7 +124,7 @@ public class Delivery {
     }
 
     /**
-     * Obtient la valeur de la propriété state.
+     * Gets the value of the state property.
      * 
      * @return
      *     possible object is
@@ -136,7 +136,7 @@ public class Delivery {
     }
 
     /**
-     * Définit la valeur de la propriété state.
+     * Sets the value of the state property.
      * 
      * @param value
      *     allowed object is
@@ -148,7 +148,7 @@ public class Delivery {
     }
 
     /**
-     * Obtient la valeur de la propriété time.
+     * Gets the value of the time property.
      * 
      * @return
      *     possible object is
@@ -160,7 +160,7 @@ public class Delivery {
     }
 
     /**
-     * Définit la valeur de la propriété time.
+     * Sets the value of the time property.
      * 
      * @param value
      *     allowed object is
@@ -172,7 +172,7 @@ public class Delivery {
     }
 
     /**
-     * Obtient la valeur de la propriété aPackage.
+     * Gets the value of the aPackage property.
      * 
      * @return
      *     possible object is
@@ -184,7 +184,7 @@ public class Delivery {
     }
 
     /**
-     * Définit la valeur de la propriété aPackage.
+     * Sets the value of the aPackage property.
      * 
      * @param value
      *     allowed object is
