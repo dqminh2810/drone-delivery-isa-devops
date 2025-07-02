@@ -1,4 +1,4 @@
-FROM mono:3.10
+FROM mono:6.8
 MAINTAINER Livrair
 
 # Loading the executable server inside the image

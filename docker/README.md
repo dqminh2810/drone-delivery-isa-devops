@@ -2,7 +2,7 @@
 
 ## Designing the images
 
-### The "External Partners" image (.Net)
+### The "External Partners" image (.Net 4.8 + Mono 6.8.0)
 
 The external partner binary is a .Net executable file (`server.exe`), with the following assumptions:
 

@@ -6,6 +6,7 @@ services:
   ddsystem:
     image: livrair/dd-int
     container_name: ddsystem
+    profiles: ["service"]
     environment:
       - map_host=ddpartners
       - map_port=9090
@@ -15,20 +16,26 @@ services:
       - "8080:8080"
     depends_on:
       - external_partners
+    networks:
+      - dd-network
 
   # The external partners, implemented as .Net services
   external_partners:
     image: livrair/dd-ext
     container_name: ddpartners
+    profiles: ["service"]
     expose:
         - "9090"
     ports:
       - "9090:9090"
+    networks:
+      - dd-network
 
   # A simple java CLI
   dd_client_boss_cli:
     image: livrair/dd-client-boss_cli
     container_name: dd_client_boss_cli
+    profiles: ["client"]
     command: "ddsystem 8080"
     volumes:
       - .:/host
@@ -37,10 +44,13 @@ services:
         condition: service_healthy
     stdin_open: true
     tty: true
+    networks:
+      - dd-network
 
   dd_client_chargeur_cli:
     image: livrair/dd-client-chargeur_cli
     container_name: dd_client_chargeur_cli
+    profiles: ["client"]
     command: "ddsystem 8080"
     volumes:
       - .:/host
@@ -49,10 +59,13 @@ services:
         condition: service_healthy
     stdin_open: true
     tty: true
+    networks:
+      - dd-network
 
   dd_client_garagiste_cli:
     image: livrair/dd-client-garagiste_cli
     container_name: dd_client_garagiste_cli
+    profiles: ["client"]
     command: "ddsystem 8080"
     volumes:
       - .:/host
@@ -61,10 +74,13 @@ services:
         condition: service_healthy
     stdin_open: true
     tty: true
+    networks:
+      - dd-network
 
   dd_client_gestionnaire_cli:
     image: livrair/dd-client-gestionnaire_cli
     container_name: dd_client_gestionnaire_cli
+    profiles: ["client"]
     command: "ddsystem 8080"
     volumes:
       - .:/host
@@ -73,10 +89,13 @@ services:
         condition: service_healthy
     stdin_open: true
     tty: true
+    networks:
+      - dd-network
 
   dd_client_manutentionnaire_cli:
     image: livrair/dd-client-manutentionnaire_cli
     container_name: dd_client_manutentionnaire_cli
+    profiles: ["client"]
     command: "ddsystem 8080"
     volumes:
       - .:/host
@@ -85,10 +104,13 @@ services:
         condition: service_healthy
     stdin_open: true
     tty: true
+    networks:
+      - dd-network
 
   dd_client_service_client_cli:
     image: livrair/dd-client-service_client_cli
     container_name: dd_client_service_client_cli
+    profiles: ["client"]
     command: "ddsystem 8080"
     volumes:
       - .:/host
@@ -97,10 +119,13 @@ services:
         condition: service_healthy
     stdin_open: true
     tty: true
+    networks:
+      - dd-network
 
   dd_client_integration_tests_cli:
     image: livrair/dd-client-integration_tests_cli
     container_name: dd_client_integration_tests_cli
+    profiles: ["client"]
     command: "ddsystem 8080"
     volumes:
       - .:/host
@@ -109,3 +134,9 @@ services:
         condition: service_healthy
     stdin_open: true
     tty: true
+    networks:
+      - dd-network
+
+networks:
+  dd-network:
+    driver: bridge
