@@ -1,7 +1,7 @@
 package cucumber;
 
 import api.DronePublicAPI;
-import fr.unice.polytech.si._4a.isa.dd.team_h.rating.Comment;
+import stubs.rating.Comment;
 import io.cucumber.java.After;
 import io.cucumber.java.en.*;
 import stubs.accounting.Invoice;

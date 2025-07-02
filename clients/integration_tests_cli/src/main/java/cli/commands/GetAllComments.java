@@ -2,7 +2,7 @@ package cli.commands;
 
 import api.DronePublicAPI;
 import cli.framework.Command;
-import stubs.ratings.Comment;
+import stubs.rating.Comment;
 
 import java.util.List;
 

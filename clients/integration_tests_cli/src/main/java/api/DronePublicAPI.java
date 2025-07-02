@@ -1,8 +1,8 @@
 package api;
 
 
-import stubs.ratings.CommentPostingWebService;
-import stubs.ratings.CommentPostingWebServiceImplService;
+import stubs.rating.CommentPostingWebService;
+import stubs.rating.CommentPostingWebServiceImplService;
 import stubs.accounting.AccountingWebService;
 import stubs.accounting.AccountingWebServiceImplService;
 import stubs.drones.DroneFleetManagementWebService;
