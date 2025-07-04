@@ -13,6 +13,6 @@ cd clients
 ./build.sh
 cd ..
 
-cd jenkins
-./build.sh
-cd ..
+#cd jenkins
+#./build.sh
+#cd ..
