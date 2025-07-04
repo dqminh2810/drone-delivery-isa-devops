@@ -17,15 +17,18 @@ COPY ./resources/manager-context.xml ./webapps/manager/META-INF/context.xml
 ENV map_host=localhost
 ENV map_port=9090
 
+# Copy the config server
+COPY ./resources/server.xml ./conf/server.xml
+
 # Copy the startup script
 COPY ./resources/start-dd.sh .
 RUN ["chmod", "u+x", "./start-dd.sh"]
 
 # Creating an health check verification to check TomEE status
-HEALTHCHECK --interval=5s CMD curl --fail http://localhost:8080/ || exit 1
+HEALTHCHECK --interval=5s CMD curl --fail http://localhost:8888/ || exit 1
 
-# exposing the 8080 port to support external connections
-EXPOSE 8080
+# exposing the 8888 port to support external connections
+EXPOSE 8888
 
 # Starting the service
 ENTRYPOINT ["./start-dd.sh"]

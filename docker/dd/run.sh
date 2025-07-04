@@ -3,8 +3,8 @@
 # Running the image as
 #  - removing the container after exit,
 #  - detached (-d),
-#  - binding localhost:8080 to container:8080
-docker run --rm -d -p 8080:8080 livrair/dd-int
+#  - binding localhost:8888 to container:8888
+docker run --rm -d -p 8888:8888 livrair/dd-int
 
 # to stop: docker stop ID
 # to start a new shell in the container: docker exec -it ID bash

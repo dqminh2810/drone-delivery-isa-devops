@@ -10,9 +10,9 @@ services:
       - map_host=ddpartners
       - map_port=9090
     expose:
-      - "8080"
+      - "8888"
     ports:
-      - "8080:8080"
+      - "8888:8888"
     depends_on:
       - external_partners
     networks:
