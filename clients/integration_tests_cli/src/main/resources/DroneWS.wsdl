@@ -289,7 +289,7 @@
   </wsdl:binding>
   <wsdl:service name="DroneFleetManagementWebServiceImplService">
     <wsdl:port binding="tns:DroneFleetManagementWebServiceImplServiceSoapBinding" name="DroneFleetManagementWebServiceImplPort">
-      <soap:address location="http://localhost:8080/drone-delivery-backend/webservices/DroneWS"/>
+      <soap:address location="http://localhost:8888/drone-delivery-backend/webservices/DroneWS"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
