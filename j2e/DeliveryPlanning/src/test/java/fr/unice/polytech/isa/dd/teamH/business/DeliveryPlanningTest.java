@@ -77,16 +77,16 @@ public class DeliveryPlanningTest extends AbstractDeliveryPlanningTest {
 
     @Test
     public void findDeliveryById() throws Exception{
-        planner.planDelivery(p, "2020-05-20", "14:30");
+        planner.planDelivery(p, "2026-05-20", "14:30");
         assertTrue(finder.findDeliveryById(p.getTrackingNumber()).isPresent());
 
-        planner.planDelivery(p2, "2020-06-20", "16:30");
+        planner.planDelivery(p2, "2026-06-20", "16:30");
         assertTrue(finder.findDeliveryById(p2.getTrackingNumber()).isPresent());
     }
 
     @Test
     public void deletePlaningEntry() throws Exception{
-        planner.planDelivery(p4, "2020-05-20", "14:30");
+        planner.planDelivery(p4, "2026-05-20", "14:30");
         assertTrue(finder.findPlanningEntryByTrackingId(p4.getTrackingNumber()).isPresent());
         planner.deletePlanningEntry(2);
         assertFalse(finder.findPlanningEntryByTrackingId(p4.getTrackingNumber()).isPresent());
@@ -94,23 +94,23 @@ public class DeliveryPlanningTest extends AbstractDeliveryPlanningTest {
 
     @Test
     public void findPlanningEntryByTrackingIdTest() throws Exception{
-        planner.planDelivery(p, "2021-05-20", "20:30");
+        planner.planDelivery(p, "2026-05-20", "20:30");
         assertTrue(finder.findPlanningEntryByTrackingId(p.getTrackingNumber()).isPresent());
 
-        planner.planDelivery(p2, "2022-06-20", "18:30");
+        planner.planDelivery(p2, "2026-06-20", "18:30");
         assertTrue(finder.findPlanningEntryByTrackingId(p2.getTrackingNumber()).isPresent());
     }
 
     @Test
     public void findAllPlannedDeliveriesTest() throws Exception {
         int baseSize = finder.findAllPlannedDeliveries().size();
-        planner.planDelivery(p3, "2021-05-20", "15:30");
+        planner.planDelivery(p3, "2026-05-20", "15:30");
         planner.editDeliveryStatus(finder.findDeliveryById(p3.getTrackingNumber()).get(), "completed");
         assertEquals(baseSize, finder.findAllPlannedDeliveries().size());
         //because it's before now
-        planner.planDelivery(p, "2020-05-20", "20:30");
+        planner.planDelivery(p, "2026-05-20", "20:30");
         assertEquals(baseSize + 1, finder.findAllPlannedDeliveries().size());
-        planner.planDelivery(p2, "2020-06-20", "15:30");
+        planner.planDelivery(p2, "2026-06-20", "15:30");
         assertEquals(baseSize + 1, finder.findAllPlannedDeliveries().size());
         //1 because drone is already assigned but will be changed with algorihtme in second sprint
     }
@@ -151,13 +151,13 @@ public class DeliveryPlanningTest extends AbstractDeliveryPlanningTest {
 
     @Test
     public void planDelivery() throws Exception {
-        planner.planDelivery(p, "2020-05-20", "11:30");
+        planner.planDelivery(p, "2026-05-20", "11:30");
         assertTrue(finder.findPlanningEntryByTrackingId(p.getTrackingNumber()).isPresent());
     }
 
     @Test
     public void editDelivery() throws Exception {
-        planner.planDelivery(p, "2020-05-20", "12:30");
+        planner.planDelivery(p, "2026-05-20", "12:30");
         Optional<Delivery> delivery = finder.findDeliveryById(p.getTrackingNumber());
         if (delivery.isPresent()) {
             planner.editDeliveryStatus(delivery.get(), "completed");
@@ -169,7 +169,7 @@ public class DeliveryPlanningTest extends AbstractDeliveryPlanningTest {
 
     @Test
     public void startDelivery() throws Exception {
-        planner.planDelivery(p, "2020-05-20", "10:30");
+        planner.planDelivery(p, "2026-05-20", "10:30");
         Optional<PlanningEntry> planningEntry = finder.findPlanningEntryByTrackingId(p.getTrackingNumber());
         Optional<Delivery> delivery = finder.findDeliveryById(p.getTrackingNumber());
         if (delivery.isPresent() && planningEntry.isPresent()) {
@@ -187,7 +187,7 @@ public class DeliveryPlanningTest extends AbstractDeliveryPlanningTest {
         d.setState(finder.checkAndUpdateState("not-sent"));
         d.setFlightTime(10);
         d.setDistance(10);
-        d.setDate("2020-05-20");
+        d.setDate("2026-05-20");
         d.setTime("15:30");
         d.setaPackage(p);
         entityManager.persist(d);

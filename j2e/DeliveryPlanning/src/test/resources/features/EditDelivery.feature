@@ -2,7 +2,7 @@ Feature: Edit delivery
   This feature supports the way a service client edits a delivery
 
   Background:
-    Given some deliveries with date 2020-05-20 time 10:30 and with UIDL45A as package and with date 2020-07-20 time 15:30 and with UIDL45T as package with LePosta as Supplier and 1 as drone and random package UIDL45C
+    Given some deliveries with date 2026-05-20 time 10:30 and with UIDL45A as package and with date 2026-07-20 time 15:30 and with UIDL45T as package with LePosta as Supplier and 1 as drone and random package UIDL45C
 
   Scenario: Set delivery completed
     When the service client edits the delivery with package UIDL45A and put the status to completed
