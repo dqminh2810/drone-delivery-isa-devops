@@ -15,7 +15,7 @@ The external partner binary is a .Net executable file (`server.exe`), with the f
 
 To build the docker launch the following command `./build.sh`
 
-### The "Drone Delivery" system image (J2E)
+### The "Drone Delivery" system image (J2E [java 8])
 
 The internal implementation of the DD system will relies on the following assumptions:
 
