@@ -438,7 +438,7 @@
   </wsdl:binding>
   <wsdl:service name="PlanningWebServiceImplService">
     <wsdl:port binding="tns:PlanningWebServiceImplServiceSoapBinding" name="PlanningWebServiceImplPort">
-      <soap:address location="http://localhost:8080/drone-delivery-backend/webservices/PlanningWS"/>
+      <soap:address location="http://localhost:8888/drone-delivery-backend/webservices/PlanningWS"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

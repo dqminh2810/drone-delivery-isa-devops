@@ -312,7 +312,7 @@
   </wsdl:binding>
   <wsdl:service name="StatsWebServiceImplService">
     <wsdl:port binding="tns:StatsWebServiceImplServiceSoapBinding" name="StatsWebServiceImplPort">
-      <soap:address location="http://localhost:8080/drone-delivery-backend/webservices/StatsWS"/>
+      <soap:address location="http://localhost:8888/drone-delivery-backend/webservices/StatsWS"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

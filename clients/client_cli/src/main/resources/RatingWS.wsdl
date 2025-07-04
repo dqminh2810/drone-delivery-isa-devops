@@ -319,7 +319,7 @@
   </wsdl:binding>
   <wsdl:service name="CommentPostingWebServiceImplService">
     <wsdl:port binding="tns:CommentPostingWebServiceImplServiceSoapBinding" name="CommentPostingWebServiceImplPort">
-      <soap:address location="http://localhost:8080/drone-delivery-backend/webservices/RatingWS"/>
+      <soap:address location="http://localhost:8888/drone-delivery-backend/webservices/RatingWS"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
