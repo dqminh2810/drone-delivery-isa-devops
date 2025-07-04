@@ -6,3 +6,4 @@ out/
 bin/
 obj/
 *.iml___jb_tmp___
+docker/jenkins/var
