@@ -1,0 +1,74 @@
+version: '2.1'
+
+services:
+
+  # A simple java CLI
+  dd_client_boss_cli:
+    image: livrair/dd-client-boss_cli
+    container_name: dd_client_boss_cli
+    command: "ddsystem 8080"
+    volumes:
+      - .:/host
+    stdin_open: true
+    tty: true
+    networks:
+      - dd-network
+
+  dd_client_chargeur_cli:
+    image: livrair/dd-client-chargeur_cli
+    container_name: dd_client_chargeur_cli
+    command: "ddsystem 8080"
+    volumes:
+      - .:/host
+    stdin_open: true
+    tty: true
+    networks:
+      - dd-network
+
+  dd_client_garagiste_cli:
+    image: livrair/dd-client-garagiste_cli
+    container_name: dd_client_garagiste_cli
+    command: "ddsystem 8080"
+    volumes:
+      - .:/host
+    stdin_open: true
+    tty: true
+    networks:
+      - dd-network
+
+  dd_client_gestionnaire_cli:
+    image: livrair/dd-client-gestionnaire_cli
+    container_name: dd_client_gestionnaire_cli
+    command: "ddsystem 8080"
+    volumes:
+      - .:/host
+    stdin_open: true
+    tty: true
+    networks:
+      - dd-network
+
+  dd_client_manutentionnaire_cli:
+    image: livrair/dd-client-manutentionnaire_cli
+    container_name: dd_client_manutentionnaire_cli
+    command: "ddsystem 8080"
+    volumes:
+      - .:/host
+    stdin_open: true
+    tty: true
+    networks:
+      - dd-network
+
+  dd_client_service_client_cli:
+    image: livrair/dd-client-service_client_cli
+    container_name: dd_client_service_client_cli
+    command: "ddsystem 8080"
+    volumes:
+      - .:/host
+    stdin_open: true
+    tty: true
+    networks:
+      - dd-network
+
+networks:
+  dd-network:
+    driver: bridge

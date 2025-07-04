@@ -125,7 +125,7 @@ services:
   dd_client_integration_tests_cli:
     image: livrair/dd-client-integration_tests_cli
     container_name: dd_client_integration_tests_cli
-    profiles: ["client"]
+    profiles: ["test"]
     command: "ddsystem 8080"
     volumes:
       - .:/host
