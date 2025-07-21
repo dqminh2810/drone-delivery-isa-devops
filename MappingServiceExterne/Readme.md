@@ -1,9 +1,16 @@
+# External Service
+
+### Technology
+- .NET Framework 4.8
+- Mono 6.8
+
 ### Installation
+
+#### Windows
 [Download Mono and GTK#](https://www.mono-project.com/download/stable/)
 
-Then add the bin folder (C:\Program Files\Mono\bin) to the path variables
+#### Linux
+`apt-get install mono-mcs`
 
-### How to use
-Compile the client by launching `compile.sh` script
-
-Then start the server with `mono server.exe` or open it with admin rights
+### Local deployment
+`compile.sh` then, `mono server.exe`

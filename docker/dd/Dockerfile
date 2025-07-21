@@ -17,10 +17,6 @@ COPY ./resources/manager-context.xml ./webapps/manager/META-INF/context.xml
 ENV map_host=localhost
 ENV map_port=9090
 
-# Host ip
-RUN TMP_HOST_IP=$(hostname -I | awk '{print $1}' | grep . || echo "localhost")
-ENV HOST_IP=$TMP_HOST_IP
-
 # Copy the config server
 COPY ./resources/server.xml ./conf/server.xml
 
