@@ -1,7 +1,7 @@
 # Drone Delivery Project
 
 ### Components
-- External service - .NET external service (C#) hosted by Mono environment
+- External service - .NET external service (C#) hosted by Mono
 - SOAP web service - J2EE applicaiton hosted by TomEE (Tomcat big brother)
 - Clients - simple java client (copy form command line interface)
 
