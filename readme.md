@@ -15,3 +15,11 @@
 ### Interact with Jenkins
 - Define CICD steps with Jenkinsfile
 - [Check setup details](docker/jenkins/Readme.md)
+
+### ARCHITECTURE
+
+#### Software Architecture
+![Software_architecture](https://github.com/dqminh2810/drone-delivery-isa-devops/blob/master/docs/drone-delivery-software_architecture.jpg)
+
+#### CICD Architecture
+![CICD_architecture](https://github.com/dqminh2810/drone-delivery-isa-devops/blob/master/docs/drone-delivery-CICD_architecture.jpg)
