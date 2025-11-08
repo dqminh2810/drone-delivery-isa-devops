@@ -2,7 +2,7 @@
 
 ### Components
 - External service - .NET external service hosted by Mono
-- SOAP web service - J2EE applicaiton hosted by Tomee
+- SOAP web service - J2EE applicaiton hosted by TomEE
 - Clients - simple java client
 
 ### Build Project 
